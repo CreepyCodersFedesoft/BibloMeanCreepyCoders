@@ -7,6 +7,7 @@ const userSchema = new mongoose.Schema({
   email: String,
   password: String,
   libraryId: { type: mongoose.Schema.ObjectId, ref: "library" },
+  roleId: { type: mongoose.Schema.ObjectId, ref: "role" },
   date: { type: Date, default: Date.now },
   dbStatus: Boolean,
 });
